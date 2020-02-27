@@ -1,1 +1,23 @@
-Tylerbux Current Value: $40142.15
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <div>Tylerbux Current Value: $<span id="value"></span>.69</div>
+
+  <script type="application/javascript">
+    function randomInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function setTotallyRealTylerBuxValue() {
+      document.getElementById('value').innerHTML = randomInteger(1, 50000);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      setTotallyRealTylerBuxValue();
+    });
+
+  </script>
+  </body>
+</html>
